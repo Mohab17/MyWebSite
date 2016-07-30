@@ -1,0 +1,288 @@
+/*
+
+My Custom CSS
+=============
+
+Author:  Brad Hussey
+Updated: August 2013
+Notes:	 Hand coded for Udemy.com
+
+*/
+
+
+/* --------------------------------------
+   Layout
+   -------------------------------------- */
+
+body {
+	background: url('../../images/bg2.jpg');
+}
+
+#features {
+	text-align: center;
+}
+.navbar-nav {
+	margin-left: 15%;
+}
+.video-container {
+	position:relative;
+	padding-bottom:56.25%;
+	padding-top:30px;
+	height:0;
+	overflow:hidden;
+	margin-bottom: 10px;
+}/*  for fullscreen youtube video*/
+
+.video-container iframe, .video-container object, .video-container embed {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}/*  for fullscreen youtube video*/
+
+
+#inputMessage {
+	margin-bottom: 15px;
+}
+
+footer {
+	background: #333;
+	color: #eee;
+	font-size: 14px;
+	padding: 10px;
+}
+
+
+/* --------------------------------------
+   Typography
+   -------------------------------------- */
+
+body {
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizelegibility;
+}
+
+.well .page-header {
+	margin-top: 0;
+}
+
+.well .page-header h1 {
+	margin-top: 0;
+}
+
+ul.unstyled {
+	list-style: none;
+	padding: 0;
+}
+
+
+/* --------------------------------------
+   Navbar
+   -------------------------------------- */
+
+/*#searchInput {
+	width: 200px;
+}*/
+
+.navbar-brand {
+	padding: 13px 15px;
+}
+
+.navbar {
+	background: #1a1a1a;
+}
+
+.navbar li a {
+        text-shadow: 0 2px 1px rgba(0,0,0,0.5);
+        display: block;
+        text-decoration: none;
+        color: #f0f0f0;
+        font-size: 1.6em;
+        margin: 0 .5em;
+}
+
+.navbar .active a {
+	background: #fdc501;
+	color: #1a1a1a;
+}
+
+#main {
+	margin-top: 60px;
+}
+/* --------------------------------------
+   Carousel
+   -------------------------------------- */
+
+#myCarousel img{
+	/*margin-top: 60px;*/
+}
+
+.carousel-caption {
+	font-size: 24px;
+
+
+}
+
+.carousel-caption h4 {
+	font-size: 32px;
+
+
+}
+
+#myCarousel .item { height: 400px; }
+
+#slide1 {
+	background: url('../../images/carousel_medium_01.jpg') top center no-repeat;
+}
+
+#slide2 {
+	background: url('../../images/carousel_medium_02.jpg') top center no-repeat;
+}
+
+#slide3 {
+	background: url('../../images/carousel_medium_03.jpg') top center no-repeat;
+}
+
+
+/* --------------------------------------
+   Global Styles
+   -------------------------------------- */
+
+.alert {
+	margin-top: 20px;
+	display: none;
+}
+
+.well {
+	margin: 20px 0;
+}
+
+.tabbable img.thumbnail {
+	margin: 0 20px 10px 0;
+}
+
+.thumbnails {
+	margin: 20px 0;
+}
+
+.thumbnail {
+	position: relative;
+}
+
+.thumbnail h3 {
+	font-size: 16px;
+	margin: 0 0 10px;
+	line-height: 20px;
+}
+
+.thumbnail .price {
+	font-size: 22px;
+	position: absolute;
+	top: -10px;
+	right: -10px;
+	padding: 10px;
+}
+
+.thumbnail .price sup {
+	font-weight: normal;
+	font-size: 12px;
+}
+
+.thumbnail span.glyphicon {
+	margin-right: 5px;
+}
+
+/* --------------------------------------
+   listen
+   -------------------------------------- */
+.audioText {
+	display: inline-block;
+	float: right;
+ font-size: 22px;
+ font-weight: bold;
+ padding: 2px 5px 5px 5px;
+}
+ol.bigOlNumbers {
+	font-size: 30px;
+	margin-right: 20px;
+}
+#listNeedMargin {
+	margin-left: 28px;
+
+}
+
+
+
+/* --------------------------------------
+   watch
+   -------------------------------------- */
+#videoSection {
+	margin: auto;
+}
+
+/* --------------------------------------
+   Media Queries
+   -------------------------------------- */
+
+/* Portrait & landscape phone */
+@media (max-width: 480px) {
+
+	.thumbnail .price {
+		font-size: 14px;
+	}
+
+	.thumbnail .price sup {
+		font-size: 10px;
+	}
+
+
+
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+
+	#myCarousel .item { height: 310px; }
+
+	#slide1 {
+		background: url('../../images/carousel_small_01.jpg') top center no-repeat;
+	}
+
+	#slide2 {
+		background: url('../../images/carousel_small_02.jpg') top center no-repeat;
+	}
+
+	#slide3 {
+		background: url('../../images/carousel_small_03.jpg') top center no-repeat;
+	}
+
+	.carousel-caption {
+		font-size: 16px;
+	}
+
+	.carousel-caption h4 {
+		font-size: 22px;
+	}
+
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+
+	#myCarousel .item { height: 500px; }
+
+	#slide1 {
+		background: url('../../images/carousel_large_01.jpg') top center no-repeat;
+	}
+
+	#slide2 {
+		background: url('../../images/carousel_large_02.jpg') top center no-repeat;
+	}
+
+	#slide3 {
+		background: url('../../images/carousel_large_03.jpg') top center no-repeat;
+	}
+
+
+}
